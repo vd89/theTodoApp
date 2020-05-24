@@ -5,6 +5,4 @@ const router = express.Router()
 
 router.post('/submit',todoController.create)
 
-
-
 export default router

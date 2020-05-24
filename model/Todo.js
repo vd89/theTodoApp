@@ -7,6 +7,6 @@ const  TodoSchema = new Schema({
   }
 })
 
+const todoItem =  mongoose.model('Todo',TodoSchema,'todoItem')
 
-
-export default mongoose.model('Todo',TodoSchema,'todoItem')
+export default todoItem
