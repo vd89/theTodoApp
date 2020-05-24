@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The todo App using express and mongodb</title>
+  <link rel="stylesheet" href="https://bootswatch.com/4/cerulean/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="text-center mt-5 bg-light">
+      <h3>Todo App using Express and mongoDB</h3>
+    </div>
+    <div class="card ">
+      <h3 class="card-header">The important list</h3>
+      <div class="card-body">
+        <h5 class="card-title">The details of the list</h5>
+        <form action="/submit" method="POST" >
+          <div class="form-group">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Add todo Item " aria-label="Add todo Item " aria-describedby="button-addon2" name="todoItem">
+              <div class="input-group-append">
+                <button class="btn btn-outline-primary" type="submit" id="button-addon2">Add Item</button>
+              </div>
+              </div>              
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
