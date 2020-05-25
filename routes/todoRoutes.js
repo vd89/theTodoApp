@@ -1,8 +1,19 @@
-import express from 'express';
+import {Router} from 'express';
+
 import todoController from '../controller/todoController';
 
-const router = express.Router()
+const router = Router()
 
-router.post('/submit',todoController.create)
+
+
+//view routes 
+router.get('/',todoController.list)
+// Add 
+router.post('/add',todoController.create)
+//Edit
+router.put('/edit/:id',todoController.edit)
+
+//Delete
+router.delete('/delete/:id',todoController.delItem)
 
 export default router
